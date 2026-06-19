@@ -25,6 +25,8 @@ import volvo22 from "@/assets/volvo-22.asset.json";
 import volvo27 from "@/assets/volvo-27.asset.json";
 import volvo40 from "@/assets/volvo-40.asset.json";
 import tempoTraveller from "@/assets/tempo-traveller.asset.json";
+import groupTour from "@/assets/groupimg.png"
+import volvo22set from "@/assets/volvo22.png"
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -307,7 +309,7 @@ function About() {
         >
           <div className="absolute -inset-4 bg-gold/20 blur-3xl rounded-full" />
           <div className="relative rounded-3xl overflow-hidden shadow-luxe">
-            <img src={groupTravelers.url} alt="Happy travelers with Prabhat Tour and Travels luxury bus" className="w-full h-[520px] object-cover" loading="lazy" />
+            <img src={groupTour} alt="Happy travelers with Prabhat Tour and Travels luxury bus" className="w-full h-[520px] object-cover" loading="lazy" />
           </div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -462,7 +464,7 @@ function Fleet() {
               <div className="relative">
                 <div className="absolute -inset-8 bg-gold/20 blur-3xl rounded-full" />
                 <div className="relative rounded-3xl overflow-hidden glass shadow-luxe aspect-[4/3]">
-                  <img src={v.img} alt={`${v.name} for rental at Prabhat Tour and Travels`} className="w-full h-full object-cover" loading="lazy" />
+                  <img src={volvo22set} alt={`${v.name} for rental at Prabhat Tour and Travels`} className="w-full h-full object-cover" loading="lazy" />
                 </div>
               </div>
               <div>
